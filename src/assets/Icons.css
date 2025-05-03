@@ -1,0 +1,48 @@
+.icon-wrapper {
+    position: relative; /* Asegura que el z-index de los iconos sea considerado en su contexto */
+    z-index: 200;  /* Puedes ajustarlo según lo que necesites */
+}
+
+button{
+    background-color: rgba(255, 255, 255, 0);
+    border-style: none;
+}
+.container-panel{
+    position: absolute;
+    top: 2%;
+    left: 100%;
+    margin-left: 1.2rem;
+    height: 95%;
+    border-radius: 10px;
+    padding: 1rem;
+    min-width: 400px;
+    display: flex;
+    background-color: rgb(254, 254, 254);
+    box-shadow: -3px 1px 9px rgba(0, 0, 0, 0.099)
+}
+
+.body-panel{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    & h3{
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+}
+
+.title-icon{
+    position: absolute;
+    top: 1;
+    left: 100%;
+    z-index: 300;
+    margin-left: 8px;
+    color: rgb(248, 248, 248);
+    background-color: rgb(13, 13, 13);
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 12px;
+}
